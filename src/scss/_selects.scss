@@ -1,0 +1,98 @@
+.filter-select {
+  display: block;
+  width: 100%;
+
+  &__select {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  .select2-container {
+    top: -1px;
+    margin: 0;
+
+    .select2-selection {
+      height: 49px;
+      padding: 0 41px 0 17px;
+      background: $white;
+      outline: 0;
+      border: 1px solid $black;
+      border-radius: $border-radius-default;
+
+      &__rendered {
+        padding: 0;
+        font: 16px/47px $font-main;
+        color: $black;
+      }
+
+      &__placeholder {
+        color: $black;
+      }
+
+      &__arrow {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 41px;
+        height: 100%;
+        text-align: center;
+
+        &:before {
+          font: 16px/47px $icons-font-solid;
+          color: rgba($black,.4);
+          content: '\f107';
+        }
+
+        b {
+          display: none;
+        }
+      }
+    }
+
+    &--open {
+
+      .select2-selection {
+
+        &__arrow {
+
+          &:before {
+            font: 16px/47px $icons-font-solid;
+            color: rgba($black,.4);
+            content: '\f106';
+          }
+        }
+      }
+    }
+  }
+  .select2-dropdown {
+    background: $white;
+    border: 1px solid $black;
+    border-top: 0;
+    border-radius: 0 0 $border-radius-default $border-radius-default;
+  }
+  .select2-results {
+
+    &__option {
+      overflow: hidden;
+      padding: 0 1.063rem;
+      font: 1rem/3.063rem $font-main;
+      color: $default-text-color;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      &[aria-selected],
+      &--highlighted[aria-selected] {
+        background-color: transparent;
+        color: $black;
+
+        &:hover {
+          background-color: transparent;
+          color: $black;
+        }
+      }
+      &[aria-selected=true] {
+        display: none;
+      }
+    }
+  }
+}

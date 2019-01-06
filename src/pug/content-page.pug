@@ -1,0 +1,10 @@
+extends layouts/site
+
+block vars
+    - var title = 'Станица с контентом - '+ companyname
+    - var description = 'Станица с контентом'
+
+block breadcrumbs
+    +breadcrumbs('Главная','Станица с контентом')
+
+block content

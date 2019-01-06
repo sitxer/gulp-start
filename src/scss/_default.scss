@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $white;
+  font: 16px/24px $font-main;
+  color: $black;
+}
+
+main {
+  min-height: 100vh;
+}
+
+p {
+  font: inherit;
+}
+
+b, strong {
+  font: inherit;
+  color: inherit;
+}
+
+fieldset {
+  border: 0;
+}
+
+a, button, input {
+  outline: 0;
+
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+textarea {
+  resize: none;
+  outline: 0;
+}
+
+a {
+  color: $link-color;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $link-color;
+    text-decoration: none;
+    transition: $transition-default;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+blockquote {
+  margin: 0;
+}

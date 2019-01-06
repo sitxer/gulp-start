@@ -1,0 +1,38 @@
+.popup {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  max-width: 554px;
+  margin: 0 auto;
+  padding: 46px 60px;
+  background: $white;
+  border-radius: $border-radius-default;
+
+  .mfp-close {
+    top: -30px;
+    right: -30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url(../img/theme/icons/close-modal_white.svg) no-repeat center;
+    background-size: 20px;
+    font-size: 0;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .popup {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .mfp-close {
+      top: 0;
+      right: 0;
+      background: url(../img/theme/icons/close-modal_black.svg) no-repeat center;
+      background-size: 20px;
+    }
+  }
+}

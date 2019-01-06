@@ -1,0 +1,35 @@
+{
+	"name": "quick-start",
+	"version": "1.0.0",
+	"description": "Gulp skeleton",
+	"license": "ISC",
+	"devDependencies": {
+		"bemto.pug": "^2.1.0",
+		"bootstrap": "^4.0.0",
+		"browser-sync": "^2.18.13",
+		"del": "^3.0.0",
+		"gulp": "^3.9.1",
+		"gulp-autoprefixer": "^4.0.0",
+		"gulp-cache": "^0.4.6",
+		"gulp-concat": "^2.6.1",
+		"gulp-cssnano": "^2.1.2",
+		"gulp-html-beautify": "^1.0.1",
+		"gulp-imagemin": "^3.3.0",
+		"gulp-notify": "^3.2.0",
+		"gulp-plumber": "^1.2.0",
+		"gulp-pug": "^3.3.0",
+		"gulp-sass": "^3.1.0",
+		"gulp-uglify-es": "^1.0.0",
+		"imagemin-pngquant": "^5.0.1",
+		"jquery": "^3.3.1",
+		"jquery.maskedinput": "^1.4.1",
+		"jquery.scrollbar": "^0.2.11",
+		"magnific-popup": "^1.1.0",
+		"select2": "^4.0.6-rc.1",
+		"slick-carousel": "^1.8.1",
+		"tether": "^1.4.3"
+	},
+	"dependencies": {
+		"npm": "^6.5.0"
+	}
+}
